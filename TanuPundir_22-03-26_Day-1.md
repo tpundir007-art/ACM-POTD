@@ -11,22 +11,22 @@ The first k elements of nums should contain the unique numbers in sorted order. 
 # solution
 class Solution 
 {
-    public int removeDuplicates(int[] nums) 
-    {
-        if(nums.length==0)
-        {
-            return 0;
-        }
-        int count=1;
-        for(int i=1;i<nums.length;i++)
-        {
-        if(nums[i]!=nums[i-1])
-        {
-        nums[count]=nums[i];
-        count++;
-        }
-        }
-        return count;
+    public int removeDuplicates(int[] nums)   
+    {  
+        if(nums.length==0)  
+        {  
+            return 0;  
+        }  
+        int count=1;  
+        for(int i=1;i<nums.length;i++)  
+        {  
+        if(nums[i]!=nums[i-1])  
+        {  
+        nums[count]=nums[i];  
+        count++;  
+        }  
+        }  
+        return count;  
         
 <img width="1365" height="749" alt="Screenshot 2026-03-22 113334" src="https://github.com/user-attachments/assets/0f9b6af8-aa3d-44ef-8c6c-8a8487efd8cc" />
 
