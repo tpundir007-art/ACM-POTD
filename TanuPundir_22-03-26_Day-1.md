@@ -9,19 +9,22 @@ The first k elements of nums should contain the unique numbers in sorted order. 
 - Since the array is already sorted, we can compare elements and check if duplicates exist. 
 - Then, if there is a duplicate we shift elements in such a way without creating a new array.
 # solution
-class Solution {
-    public int removeDuplicates(int[] nums) {
-        if(nums.length==0){
+class Solution 
+{
+    public int removeDuplicates(int[] nums) 
+    {
+        if(nums.length==0)
+        {
             return 0;
         }
         int count=1;
         for(int i=1;i<nums.length;i++)
         {
-            if(nums[i]!=nums[i-1])
-            {
-                nums[count]=nums[i];
-                count++;
-            }
+        if(nums[i]!=nums[i-1])
+        {
+        nums[count]=nums[i];
+        count++;
+        }
         }
         return count;
         
